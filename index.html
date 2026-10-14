@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drive-Auto-Upload : un outil personnel pour envoyer automatiquement des dossiers de son Mac vers son propre Google Drive.">
+  <title>Drive-Auto-Upload — Présentation</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f6f8fb;color:#202d40;font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:800px;margin:56px auto;padding:36px;background:#fff;border:1px solid #dce3ec;border-radius:14px}nav{display:flex;gap:24px;flex-wrap:wrap;border-bottom:1px solid #e4e9f0;padding-bottom:20px}a{color:#1755b5;text-underline-offset:3px}h1{font-size:32px;line-height:1.2;margin-top:32px}h2{font-size:21px;margin-top:28px}.eyebrow{color:#51647c;font-size:14px;letter-spacing:.08em;text-transform:uppercase}.intro{font-size:20px}.note{background:#edf4fc;border-left:3px solid #3167ab;padding:14px 18px}footer{margin-top:36px;border-top:1px solid #e4e9f0;padding-top:18px;color:#52657b;font-size:14px}@media(max-width:600px){main{margin:16px;padding:24px}h1{font-size:28px}}
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Navigation principale"><a href="index.html" aria-current="page">Présentation</a><a href="privacy.html">Confidentialité</a></nav>
+  <p class="eyebrow">Outil personnel · Application de bureau</p>
+  <h1>Drive-Auto-Upload</h1>
+  <p class="intro">Envoi automatique de dossiers sélectionnés sur un Mac vers le Google Drive de son propriétaire.</p>
+  <p class="note" lang="zh-CN">这是个人电脑自动上传工具的说明页：由电脑上的 rclone 将选定文件夹上传到本人 Google Drive。隐私说明见上方 « Confidentialité »。</p>
+  <h2>Fonctionnement</h2>
+  <p>Drive-Auto-Upload désigne une configuration personnelle de rclone, exécutée sur le Mac de son propriétaire. Une tâche macOS lance régulièrement la copie de deux dossiers locaux vers les dossiers correspondants du compte Google Drive autorisé.</p>
+  <p>La tâche ajoute les nouveaux fichiers et met à jour les fichiers admissibles selon leurs dates et les critères de comparaison de rclone. Elle est configurée pour préserver les fichiers plus récents sur Drive et ne pas répercuter la suppression d'un fichier local sur Drive. Elle nécessite un ordinateur disponible et une connexion Internet.</p>
+  <h2>Accès à Google Drive</h2>
+  <p>L'autorisation est accordée directement auprès de Google, depuis rclone. L'outil utilise l'API Google Drive pour retrouver les dossiers de destination, comparer les fichiers et envoyer les fichiers sélectionnés.</p>
+  <p>Pour continuer à utiliser des dossiers et fichiers déjà présents dans Drive, cette configuration demande l'autorisation générale Google Drive. Cette autorisation permet techniquement un accès étendu aux fichiers du compte, même si la tâche automatique est configurée pour travailler sur les dossiers choisis par le propriétaire.</p>
+  <h2>Usage et assistance</h2>
+  <p>Cet outil est réservé à son propriétaire. Il ne propose ni inscription publique ni service de stockage pour des tiers. Pour toute question, l'adresse d'assistance est celle indiquée sur l'écran d'autorisation Google de Drive-Auto-Upload.</p>
+  <p>Ce site présente uniquement l'outil. Il ne reçoit pas les documents transférés, les mots de passe Google ou les jetons d'autorisation. Consultez la <a href="privacy.html">politique de confidentialité</a> pour les détails sur l'utilisation des données.</p>
+  <footer>Mis à jour le 14 octobre 2026. Outil personnel reposant sur <a href="https://rclone.org/">rclone</a> ; il ne s'agit pas d'un produit officiel de Google.</footer>
+</main>
+</body>
+</html>
